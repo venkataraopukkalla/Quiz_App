@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".DisplayScore">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Score"
+        android:textSize="40sp"
+        android:id="@+id/yourscoreTextView"
+        android:textColor="#E90064"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="100dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/primary_color"
+        android:layout_below="@+id/yourscoreTextView">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yourscoreId"
+            android:padding="25dp"
+            android:text="145"
+            android:background="@drawable/totalscorepagebackground"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
